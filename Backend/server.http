@@ -1,0 +1,30 @@
+###
+POST http://localhost:5000/candidates
+Content-Type: application/json
+
+{
+    "name": "jack",
+    "dob": "09-09-2023",
+    "address": "India",
+    "contactInfo": 345897053,
+    "gender": "Female"
+}
+
+###
+GET http://localhost:5000/candidates
+
+###
+GET http://localhost:5000/candidates/6527f594ccaa1c784c68a74f
+
+###
+PUT http://localhost:5000/candidates/65295bc14d7438c44da54ac3
+Content-Type: application/json
+
+{
+    "name": "Jack",
+    "bob": "12-06-2001",
+    "gender": "Male"
+}
+
+###
+DELETE http://localhost:5000/candidates/65295ab6d59d3e5e3b5c0f04
